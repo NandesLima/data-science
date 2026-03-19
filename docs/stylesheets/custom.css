@@ -23,33 +23,64 @@
   padding: 0 !important;
 }
 
-/* Reset header to Material default but with glassmorphism */
-.md-header {
-  background: rgba(5, 5, 5, 0.8) !important;
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--glass-border);
+/* Reset general Material UI elements for a clean single-screen look */
+.md-main__inner {
+  margin-top: 0 !important;
 }
 
-/* Base landing page - reset structure to allow normal header menu */
+/* Force everything to fit in one screen view like the Math repo */
 .modern-landing {
   background-color: var(--bg-color);
   color: var(--text-color);
-  overflow-x: hidden;
-  line-height: 1.6;
-  padding: 4rem 10%;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
   margin: -1.5rem;
-  min-height: 100vh;
 }
 
-/* Ensure the top navigation is prominent */
-.md-tabs {
-  background: rgba(5, 5, 5, 0.6) !important;
-  backdrop-filter: blur(8px);
+.modern-landing .hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
 }
 
-/* If you really want a sidebar to be toggleable on desktop */
-/* By default, mkdocs-material shows the hamburger only on mobile. */
-/* On desktop it uses tabs or sidebar. Switching to tabs is cleaner. */
+.modern-landing .hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem); /* Slightly smaller to fit better */
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  border: none !important;
+}
+
+.modern-landing .hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.modern-landing .hero-img-container {
+  width: 100%;
+  max-height: 70vh;
+  aspect-ratio: 1/1;
+  border-radius: 30px;
+  box-shadow: 0 0 50px rgba(0, 242, 255, 0.1);
+}
+
+/* Ensure sidebars are gone on landing */
+[data-md-component="main"]:has(.modern-landing) .md-sidebar,
+[data-md-component="main"]:has(.modern-landing) .md-tabs {
+  display: none !important;
+}
+
+/* Hamburger menu only */
+[data-md-component="main"]:has(.modern-landing) .md-header__button.md-logo,
+[data-md-component="main"]:has(.modern-landing) .md-header__topic {
+  display: block !important;
+}
 
 /* Allow the landing page to use the full width */
 [data-md-component="main"]:has(.modern-landing) .md-content {
