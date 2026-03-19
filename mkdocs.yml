@@ -8,6 +8,8 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+    - navigation.expand
+    - navigation.drawer # This enables the "3-bar" hamburger menu style
   palette:
     - scheme: slate
       primary: black
