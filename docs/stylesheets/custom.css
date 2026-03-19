@@ -164,10 +164,22 @@ body:has(.modern-landing) .md-main__inner {
   display: inline-block;
 }
 
-.modern-landing .btn-primary {
-  background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
-  color: #fff !important;
-  box-shadow: 0 4px 15px rgba(0, 242, 255, 0.3);
+/* Status Button for progress tracking */
+.status-btn {
+  background: transparent;
+  border: 1px solid var(--accent-primary);
+  color: var(--accent-primary);
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: monospace;
+  transition: all 0.3s ease;
+}
+
+.status-btn.completed {
+  background: var(--accent-primary);
+  color: #000;
+  font-weight: bold;
 }
 
 /* Responsive */

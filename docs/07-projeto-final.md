@@ -10,9 +10,9 @@ Um cientista de dados é contratado pelo que ele consegue fazer, não apenas pel
 
 | Recurso | Tipo | Descrição | Status |
 | :--- | :---: | :---: | :---: |
-| [Specializations List](extras/specializations.md) | Guia | Sugestões de trilhas focadas em projetos. | [ ] |
-| [Classic Books](extras/books.md) | Leitura | Leituras obrigatórias para dominar os fundamentos. | [ ] |
-| [Meetups Local](https://www.meetup.com/) | Evento | Networking e troca de experiências na vida real. | [ ] |
+| [Specializations List](extras/specializations.md) | Guia | Sugestões de trilhas focadas em projetos. | <button class="status-btn" onclick="toggleStatus(this)">[ ]</button> |
+| [Classic Books](extras/books.md) | Leitura | Leituras obrigatórias para dominar os fundamentos. | <button class="status-btn" onclick="toggleStatus(this)">[ ]</button> |
+| [Meetups Local](https://www.meetup.com/) | Evento | Networking e troca de experiências na vida real. | <button class="status-btn" onclick="toggleStatus(this)">[ ]</button> |
 
 ---
 *Dica Final: Não espere terminar todos os cursos para começar a codar. Comece hoje mesmo a resolver pequenos problemas.*

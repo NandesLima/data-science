@@ -4,10 +4,10 @@ Os dados são incertos e a estatística é a ferramenta para lidar com essa ince
 
 | Curso | Duração | Instituição | Conteúdo | Status |
 | :--- | :---: | :---: | :--- | :---: |
-| [Intro to Probability](https://projects.iq.harvard.edu/stat110/home) | 12 Semanas | Harvard | O curso definitivo de Stat 110. | [ ] |
-| [Descriptive Statistics](https://www.udacity.com/course/intro-to-descriptive-statistics--ud827) | 8 Semanas | San Jose St | Medidas de tendência central. | [ ] |
-| [Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201) | 8 Semanas | San Jose St | Testes de hipóteses e p-valor. | [ ] |
-| [Statistical Learning (Python)](https://www.edx.org/learn/python/stanford-university-statistical-learning-with-python) | 11 Semanas | Stanford | Onde a estatística vira ML. | [ ] |
+| [Intro to Probability](https://projects.iq.harvard.edu/stat110/home) | 12 Semanas | Harvard | O curso definitivo de Stat 110. | <button class="status-btn" onclick="toggleStatus(this)">[ ]</button> |
+| [Descriptive Statistics](https://www.udacity.com/course/intro-to-descriptive-statistics--ud827) | 8 Semanas | San Jose St | Medidas de tendência central. | <button class="status-btn" onclick="toggleStatus(this)">[ ]</button> |
+| [Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201) | 8 Semanas | San Jose St | Testes de hipóteses e p-valor. | <button class="status-btn" onclick="toggleStatus(this)">[ ]</button> |
+| [Statistical Learning (Python)](https://www.edx.org/learn/python/stanford-university-statistical-learning-with-python) | 11 Semanas | Stanford | Onde a estatística vira ML. | <button class="status-btn" onclick="toggleStatus(this)">[ ]</button> |
 
 ---
 *Nota: Recomendo usar o livro **ISLP (Introduction to Statistical Learning with Python)** como material de cabeceira para estes cursos.*

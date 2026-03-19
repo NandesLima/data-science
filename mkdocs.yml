@@ -22,6 +22,9 @@ extra_css:
   - stylesheets/custom.css
   - stylesheets/global-modern.css
 
+extra_javascript:
+  - javascripts/progress.js
+
 nav:
   - 'Início': index.md
   - 'Currículo':
@@ -32,7 +35,6 @@ nav:
       - '05. Bancos de Dados (SQL)': 05-banco-de-dados.md
       - '06. Machine Learning': 06-machine-learning.md
       - '07. Projeto Final': 07-projeto-final.md
-  - 'Sobre': README.md
 
 markdown_extensions:
   - pymdownx.highlight
