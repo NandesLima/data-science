@@ -23,25 +23,38 @@
   padding: 0 !important;
 }
 
-/* The landing page container */
+/* Hide navigation for the landing page specifically */
+[data-md-component="main"]:has(.modern-landing) .md-sidebar--primary,
+[data-md-component="main"]:has(.modern-landing) .md-sidebar--secondary,
+[data-md-component="main"]:has(.modern-landing) .md-content__button {
+  display: none !important;
+}
+
+/* Allow the landing page to use the full width */
+[data-md-component="main"]:has(.modern-landing) .md-content {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Base modern-landing adjustments */
 .modern-landing {
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
   line-height: 1.6;
-  padding: 4rem 8%;
-  margin: -1.5rem; /* Offset MkDocs default inner padding */
+  padding: 4rem 10%; /* Increased horizontal padding */
+  margin: -1.5rem;
   border-radius: 10px;
   min-height: 100vh;
 }
 
-/* Hero Section */
+/* Align content to the left to avoid the "float" feeling */
 .modern-landing .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
-  padding: 4rem 0;
+  justify-content: flex-start; /* Left aligned */
+  gap: 6rem; /* More space between text and image */
+  padding: 6rem 0;
   min-height: 70vh;
 }
 
