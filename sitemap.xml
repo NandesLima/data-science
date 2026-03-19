@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://NandesLima.github.io/data-science/</loc>
+         <lastmod>2026-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://NandesLima.github.io/data-science/01-introducao/</loc>
+         <lastmod>2026-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://NandesLima.github.io/data-science/02-programacao/</loc>
+         <lastmod>2026-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://NandesLima.github.io/data-science/03-matematica/</loc>
+         <lastmod>2026-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://NandesLima.github.io/data-science/04-estatistica/</loc>
+         <lastmod>2026-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://NandesLima.github.io/data-science/05-banco-de-dados/</loc>
+         <lastmod>2026-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://NandesLima.github.io/data-science/06-machine-learning/</loc>
+         <lastmod>2026-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://NandesLima.github.io/data-science/07-projeto-final/</loc>
+         <lastmod>2026-03-19</lastmod>
+    </url>
+</urlset>
