@@ -35,9 +35,9 @@
   display: block !important;
 }
 
-/* The Landing Page Container */
+/* The Landing Page Container with deep purple gradient background */
 .modern-landing {
-  background-color: var(--bg-color);
+  background: radial-gradient(circle at 20% 30%, #1a0033 0%, #050505 70%);
   color: var(--text-color);
   overflow-x: hidden;
   padding: 0 10%;
