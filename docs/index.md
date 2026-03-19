@@ -16,14 +16,14 @@
     </div>
     <div class="hero-visual">
       <div class="hero-img-container">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" alt="Data Science">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" alt="Data Science Visual">
       </div>
     </div>
   </section>
 
   <!-- Pillars Section -->
   <section class="features">
-    <span class="section-tag">Fundamentos</span>
+    <span class="section-tag" style="color: #00f2ff; text-transform: uppercase; font-weight: bold; letter-spacing: 2px;">Fundamentos</span>
     <div class="grid">
       <div class="card">
         <h3>💻 Computer Science</h3>
