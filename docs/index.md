@@ -16,7 +16,7 @@
     </div>
     <div class="hero-visual">
       <div class="hero-img-container">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" alt="Data Science Visual">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop" alt="Inteligência Artificial">
       </div>
     </div>
   </section>
