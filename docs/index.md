@@ -11,12 +11,50 @@
         Um caminho open-source para educação autodidata em Ciência de Dados, com cursos das melhores universidades do mundo.
       </p>
       <div class="hero-actions">
-        <a href="README/" class="btn btn-primary">Começar Jornada</a>
+        <a href="README/" class="btn btn-primary">Começar a Aprender</a>
       </div>
     </div>
     <div class="hero-visual">
       <div class="hero-img-container">
         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" alt="Data Science Visual">
+      </div>
+    </div>
+  </section>
+
+  <!-- O MÉTODO Section -->
+  <section class="info-section">
+    <span class="section-tag">O MÉTODO</span>
+    <div class="grid">
+      <div class="card">
+        <h3>🎓 100% Gratuito</h3>
+        <p>Conteúdo curado das melhores universidades e plataformas abertas do mundo.</p>
+      </div>
+      <div class="card">
+        <h3>📈 Do Básico ao Avançado</h3>
+        <p>Do Ensino Médio até Tópicos Avançados de Ciência de Dados e IA.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Gamificado</h3>
+        <p>Acompanhe seu progresso módulo a módulo com nosso rastreador integrado no GitHub.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- A ARQUITETURA Section -->
+  <section class="info-section">
+    <span class="section-tag">A ARQUITETURA</span>
+    <div class="grid">
+      <div class="card">
+        <h3>📚 Duas Velocidades</h3>
+        <p>Acesse o material denso (nível universitário) e os resumos (crash-courses) para aprender no seu ritmo.</p>
+      </div>
+      <div class="card">
+        <h3>💻 Foco no Código</h3>
+        <p>Estruturas de Dados, Algoritmos, IA, Banco de Dados e Redes. Formação completa de ponta a ponta.</p>
+      </div>
+      <div class="card">
+        <h3>⚙️ Rastreador Local</h3>
+        <p>Um sistema de ✅ Concluído inteligente embutido nas tabelas que salva seu progresso offline no próprio navegador.</p>
       </div>
     </div>
   </section>
