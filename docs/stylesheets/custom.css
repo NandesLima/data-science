@@ -15,25 +15,28 @@
   --md-default-bg-color: var(--bg-color);
 }
 
-/* General Layout Reset */
-.md-main__inner {
-  margin-top: 0 !important;
-}
-
-/* Hide header, tabs and sidebar on landing page for a true full-screen experience */
-body:has(.modern-landing) .md-header,
+/* Hide tabs and sidebar on landing page */
 body:has(.modern-landing) .md-tabs,
 body:has(.modern-landing) .md-sidebar {
   display: none !important;
 }
 
-/* Adjust main container to fill the gap left by hidden header */
-body:has(.modern-landing) .md-container {
-  padding-top: 0 !important;
+/* Ensure the top header (search, name) is visible but clean */
+body:has(.modern-landing) .md-header {
+  background-color: rgba(5, 5, 5, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
 }
 
-body:has(.modern-landing) .md-main {
-  margin-top: 0 !important;
+/* Remove left/right spacing for the main content area to eliminate the "black sidebars" */
+body:has(.modern-landing) .md-content {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+body:has(.modern-landing) .md-main__inner {
+  margin: 0 !important;
+  max-width: none !important;
 }
 
 /* The Landing Page Container with deep purple gradient background */
@@ -41,18 +44,19 @@ body:has(.modern-landing) .md-main {
   background: radial-gradient(circle at 20% 30%, #1a0033 0%, #050505 70%);
   color: var(--text-color);
   overflow-x: hidden;
-  padding: 0 10%;
+  padding: 4rem 10% 0 10%; /* Top padding for the header space */
   margin: -1.5rem;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 /* Hero Section: 50/50 Split - Bigger Image */
 .modern-landing .hero {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr; /* Image takes slightly more space */
+  grid-template-columns: 0.9fr 1.1fr;
   align-items: center;
   gap: 3rem;
-  min-height: 85vh;
+  min-height: 80vh;
   width: 100%;
 }
 
@@ -62,23 +66,39 @@ body:has(.modern-landing) .md-main {
 }
 
 .modern-landing .hero-title {
-  font-size: clamp(2.8rem, 6vw, 4.2rem); /* Slightly smaller font to allow space */
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
   font-weight: 900;
   line-height: 1.0;
   margin-bottom: 1.5rem;
   border: none !important;
 }
 
+.modern-landing .hero-title span {
+  display: block;
+  background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modern-landing .hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.8;
+  max-width: 500px;
+  margin-bottom: 3rem;
+}
+
+/* Hero Visual: IA Image */
 .modern-landing .hero-visual {
   display: flex;
-  justify-content: flex-end; /* Align to the right */
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
 }
 
 .modern-landing .hero-img-container {
   width: 100%;
-  max-width: 650px; /* Increased from 500px */
+  max-width: 650px;
   aspect-ratio: 1/1;
   border-radius: 40px;
   overflow: hidden;
