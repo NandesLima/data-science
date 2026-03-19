@@ -162,6 +162,18 @@ body:has(.modern-landing) .md-main__inner {
   font-weight: 700;
   text-decoration: none !important;
   display: inline-block;
+  transition: var(--transition);
+}
+
+.modern-landing .btn-primary {
+  background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary)) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 15px rgba(0, 242, 255, 0.3);
+}
+
+.modern-landing .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 242, 255, 0.4);
 }
 
 /* Status Button for progress tracking */
