@@ -16,7 +16,7 @@
     </div>
     <div class="hero-visual">
       <div class="hero-img-container">
-        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop" alt="Inteligência Artificial">
+        <img src="assets/ai-landing.jpg" alt="Inteligência Artificial">
       </div>
     </div>
   </section>
