@@ -8,8 +8,8 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+    - navigation.tabs # Isso coloca o menu no topo
     - navigation.expand
-    - navigation.drawer # This enables the "3-bar" hamburger menu style
   palette:
     - scheme: slate
       primary: black

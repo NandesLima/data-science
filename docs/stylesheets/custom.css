@@ -23,33 +23,33 @@
   padding: 0 !important;
 }
 
-/* Ensure header is always visible and glassy */
-[data-md-color-scheme="slate"] .md-header {
+/* Reset header to Material default but with glassmorphism */
+.md-header {
   background: rgba(5, 5, 5, 0.8) !important;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--glass-border);
 }
 
-/* On landing page, keep ONLY the hamburger menu and title in header */
-[data-md-component="main"]:has(.modern-landing) .md-header__topic {
-  display: block !important;
-}
-
-/* Adjust content to not be hidden behind the fixed header */
+/* Base landing page - reset structure to allow normal header menu */
 .modern-landing {
-  padding-top: 6rem; /* Space for the top header */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+  line-height: 1.6;
+  padding: 4rem 10%;
+  margin: -1.5rem;
+  min-height: 100vh;
 }
 
-/* Hide sidebars on landing page initially but allow the drawer to open */
-[data-md-component="main"]:has(.modern-landing) .md-sidebar--primary {
-  display: none;
-}
-[data-md-component="main"]:has(.modern-landing) .md-sidebar--secondary {
-  display: none;
+/* Ensure the top navigation is prominent */
+.md-tabs {
+  background: rgba(5, 5, 5, 0.6) !important;
+  backdrop-filter: blur(8px);
 }
 
-/* When the drawer is toggled (Material MkDocs adds a class or uses a checkbox) */
-/* The "navigation.drawer" feature in Material handles the 3-bar menu automatically */
+/* If you really want a sidebar to be toggleable on desktop */
+/* By default, mkdocs-material shows the hamburger only on mobile. */
+/* On desktop it uses tabs or sidebar. Switching to tabs is cleaner. */
 
 /* Allow the landing page to use the full width */
 [data-md-component="main"]:has(.modern-landing) .md-content {
