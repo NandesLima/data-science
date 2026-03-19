@@ -8,7 +8,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-    - navigation.tabs # Isso coloca o menu no topo
+    - navigation.tabs
     - navigation.expand
   palette:
     - scheme: slate
@@ -24,7 +24,14 @@ extra_css:
 
 nav:
   - 'Início': index.md
-  - 'Currículo': README.md
+  - 'Currículo':
+      - '01. Introdução à Data Science': 01-introducao.md
+      - '02. Programação (Python)': 02-programacao.md
+      - '03. Matemática (Cálculo e Álgebra)': 03-matematica.md
+      - '04. Estatística e Probabilidade': 04-estatistica.md
+      - '05. Bancos de Dados (SQL)': 05-banco-de-dados.md
+      - '06. Machine Learning': 06-machine-learning.md
+      - '07. Projeto Final': 07-projeto-final.md
   - 'Sobre': README.md
 
 markdown_extensions:
